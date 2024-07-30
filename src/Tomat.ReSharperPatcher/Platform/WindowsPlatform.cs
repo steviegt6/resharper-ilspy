@@ -9,6 +9,6 @@ internal sealed class WindowsPlatform : IPlatform
 
     string IPlatform.GetRspDataDirectory()
     {
-        return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), rsp_data_directory_name);
+        return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), rsp_data_directory_name);
     }
 }
