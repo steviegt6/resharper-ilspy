@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 using CliFx;
+
+using Tomat.ReSharperPatcher.Platform;
 
 namespace Tomat.ReSharperPatcher;
 
@@ -10,9 +10,10 @@ internal static class Program
 {
     public static async Task<int> Main(string[] args)
     {
-        Environment.GetFolderPath(Environment.SpecialFolder)
+        CommonPlatform.InitializePlatform();
+        
         return await new CliApplicationBuilder()
-                    .SetTitle("r# patcher")
+                    .SetTitle("rsp (r# patcher)")
                     .SetVersion('v' + typeof(Program).Assembly.GetName().Version?.ToString())
                     .SetDescription("a tool to patch r#")
                     .AddCommandsFromThisAssembly()
