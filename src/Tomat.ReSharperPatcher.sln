@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.ReSharperPatcher", "Tomat.ReSharperPatcher\Tomat.ReSharperPatcher.csproj", "{0B3258E8-2386-4650-9A7E-A9631E57A5A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomat.ReSharperPatcher.Impl", "Tomat.ReSharperPatcher.Impl\Tomat.ReSharperPatcher.Impl.csproj", "{4AAAC6BC-181F-427E-8552-27C1EDE741C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{0B3258E8-2386-4650-9A7E-A9631E57A5A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B3258E8-2386-4650-9A7E-A9631E57A5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B3258E8-2386-4650-9A7E-A9631E57A5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AAAC6BC-181F-427E-8552-27C1EDE741C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AAAC6BC-181F-427E-8552-27C1EDE741C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AAAC6BC-181F-427E-8552-27C1EDE741C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AAAC6BC-181F-427E-8552-27C1EDE741C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

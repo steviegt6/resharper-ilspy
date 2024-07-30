@@ -1,5 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+
+using AsmResolver.DotNet;
 
 // TODO: Eventually make this actually good.
 // Platform-agnostic, abstractions for patches, smart handling for caching, etc.
@@ -16,6 +19,16 @@ internal static class Program
 
         var rsHostDir = ResolveReSharperHostDir() ?? throw new DirectoryNotFoundException("Could not resolve ReSharperHost directory");
         Console.WriteLine("ReSharperHost directory: " + rsHostDir);
+
+        File.Copy("ICSharpCode.Decompiler.dll",      Path.Combine(rsHostDir, "ICSharpCode.Decompiler.dll"),      true);
+        File.Copy("Tomat.ReSharperPatcher.Impl.dll", Path.Combine(rsHostDir, "Tomat.ReSharperPatcher.Impl.dll"), true);
+
+        var implDll = AssemblyDefinition.FromFile(Path.Combine(rsHostDir, "Tomat.ReSharperPatcher.Impl.dll"));
+
+        var csharpDll            = AssemblyDefinition.FromFile(Path.Combine(rsHostDir, "JetBrains.ReSharper.Feature.Services.ExternalSources.CSharp.dll"));
+        var mod                  = csharpDll.Modules.First();
+        var assemblyExporter     = mod.TopLevelTypes.First(x => x.Name == "AssemblyExporter");
+        var decompileTypeElement = assemblyExporter.Methods.First(x => x.Name == "DecompileTypeElement" && x.Signature!.ReturnType == mod.CorLibTypeFactory.Boolean);
     }
 
     private static string? ResolveReSharperHostDir()
