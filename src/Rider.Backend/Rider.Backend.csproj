@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+
+        <AssemblyName>rsp</AssemblyName>
+        <RootNamespace>Rider.Backend</RootNamespace>
+
+        <NoWarn>MSB3246;MSB3277</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\*.dll" Private="false"/>
+        <Reference Include="..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\*.exe.backup" Private="false"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="25.1.2"/>
+    </ItemGroup>
+
+</Project>
