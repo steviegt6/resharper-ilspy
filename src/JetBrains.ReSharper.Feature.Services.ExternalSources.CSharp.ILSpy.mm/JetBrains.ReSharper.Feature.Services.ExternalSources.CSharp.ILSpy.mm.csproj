@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+
+        <RootNamespace>JetBrains.ReSharper.Feature.Services.ExternalSources.CSharp</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="JetBrains.Annotations">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Annotations.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Decompiler.Core">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Decompiler.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Lifetimes">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Lifetimes.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.ComponentModel">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.ComponentModel.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.Core">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.DocumentModel">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.DocumentModel.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.Metadata">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.Metadata.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.ProjectModel">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.ProjectModel.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.Shell">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.Shell.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.Symbols">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.Symbols.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.Platform.Util">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.Platform.Util.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Feature.Services">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Feature.Services.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Feature.Services.ExternalSources">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Feature.Services.ExternalSources.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Feature.Services.ExternalSources.CSharp">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Feature.Services.ExternalSources.CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Psi">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Psi.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Psi.CSharp">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Psi.CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="JetBrains.ReSharper.Resources">
+            <HintPath>..\..\..\..\..\AppData\Local\Programs\Rider\lib\ReSharperHost\JetBrains.ReSharper.Resources.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+</Project>
