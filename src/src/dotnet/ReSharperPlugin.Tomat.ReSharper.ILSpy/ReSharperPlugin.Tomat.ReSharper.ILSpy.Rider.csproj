@@ -9,7 +9,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Rider.SDK" Version="$(SdkVersion)"/>
+        <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
+        <PackageReference Include="JetBrains.ReSharper.SDK" Version="$(SdkVersion)" PrivateAssets="all"/>
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="25.1.2"/>
     </ItemGroup>
 
 </Project>

@@ -1,15 +1,15 @@
 <idea-plugin require-restart="true">
-  <id>com.jetbrains.rider.plugins.tomat.resharper.ilspy</id>
-  <name>Tomat.ReSharper.ILSpy</name>
-  <version>_PLACEHOLDER_</version>
-  <vendor url="https://project-url">Author</vendor>
-  <idea-version since-build="_PLACEHOLDER_" until-build="_PLACEHOLDER_" />
-  <depends>com.intellij.modules.rider</depends>
+    <id>com.jetbrains.rider.plugins.tomat.resharper.ilspy</id>
+    <name>Tomat.ReSharper.ILSpy</name>
+    <version>_PLACEHOLDER_</version>
+    <vendor url="https://tomat.dev">Tomat</vendor>
+    <idea-version since-build="_PLACEHOLDER_" until-build="_PLACEHOLDER_"/>
+    <depends>com.intellij.modules.rider</depends>
 
-  <description>
-<![CDATA[
+    <description>
+        <![CDATA[
 <p>Sample description</p>
 ]]>
-  </description>
+    </description>
 
 </idea-plugin>
