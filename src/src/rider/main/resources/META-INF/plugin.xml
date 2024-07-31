@@ -8,7 +8,7 @@
 
     <description>
         <![CDATA[
-<p>Sample description</p>
+<p>Hooks into the R# C# decompiler and uses ILSpy</p>
 ]]>
     </description>
 

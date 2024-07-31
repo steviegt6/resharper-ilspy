@@ -4,7 +4,7 @@ $SourceBasePath = "$PSScriptRoot\src\dotnet"
 
 $VsWhereOutput = [xml] (& "$PSScriptRoot\tools\vswhere.exe" -format xml -products *)
 $VisualStudio = $VsWhereOutput.instances.instance |
-    Where-Object { $_.channelId -match "Release" } |
+    Where-Object { $_.channelId -match "Preview" } |
     Sort-Object -Property installationVersion |
     Select-Object -Last 1
 

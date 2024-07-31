@@ -12,8 +12,8 @@
         <Copyright>Copyright $([System.DateTime]::Now.Year) Tomat et al.</Copyright>
         <PackageTags>resharper plugin</PackageTags>
 
-        <PackageProjectUrl></PackageProjectUrl>
-        <PackageLicenseUrl></PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/steviegt6/resharper-patcher</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/steviegt6/resharper-patcher/blob/master/LICENSE</PackageLicenseUrl>
         <PackageIconUrl></PackageIconUrl>
     </PropertyGroup>
 
