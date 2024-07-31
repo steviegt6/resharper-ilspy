@@ -1,5 +1,9 @@
-# resharper-patcher
+# ILSpy for Rider and ReSharper
 
-Program to patch ReSharperHost assemblies as distributed by Rider.
+[![Rider](https://img.shields.io/jetbrains/plugin/v/RIDER_PLUGIN_ID.svg?label=Rider&colorB=0A7BBB&style=for-the-badge&logo=rider)](https://plugins.jetbrains.com/plugin/RIDER_PLUGIN_ID)
+[![ReSharper](https://img.shields.io/jetbrains/plugin/v/RESHARPER_PLUGIN_ID.svg?label=ReSharper&colorB=0A7BBB&style=for-the-badge&logo=resharper)](https://plugins.jetbrains.com/plugin/RESHARPER_PLUGIN_ID)
 
-Currently only attempts to patch R# to use ILSpy as the preferred .NET decompiler.
+---
+
+Integrates `ICSharpCode.Decompiler` (ILSpy) into JetBrains Rider and ReSharper as the C# decompiler of choice instead of JetBrains dotPeek.
+~~~~

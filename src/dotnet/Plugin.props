@@ -1,0 +1,20 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <!-- See https://www.nuget.org/packages/JetBrains.ReSharper.SDK -->
+    <!-- Keep in sync with ProductVersion in gradle.properties -->
+    <SdkVersion>2024.1.0</SdkVersion>
+
+    <Title>ILSpy</Title>
+    <Description>Integrates ICSharpCode.Decompiler (ILSpy) into JetBrains Rider and ReSharper as the C# decompiler of choice instead of JetBrains dotPeek.</Description>
+
+    <Authors>Author</Authors>
+    <Copyright>Copyright $([System.DateTime]::Now.Year)  Tomat et al.</Copyright>
+    <PackageTags>resharper plugin</PackageTags>
+
+    <PackageProjectUrl>https://github.com/steviegt6/resharper-ilspy</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/steviegt6/resharper-ilspy/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
