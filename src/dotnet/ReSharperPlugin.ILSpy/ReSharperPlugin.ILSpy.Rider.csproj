@@ -6,10 +6,15 @@
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <IsPackable>false</IsPackable>
         <DefineConstants>$(DefineConstants);RIDER</DefineConstants>
+
+        <NoWarn>MSB3277;NU1603</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="JetBrains.Rider.SDK" Version="$(SdkVersion)"/>
+
+        <!-- Resolve version conflict. -->
+        <PackageReference Include="Mono.Cecil" Version="0.11.5"/>
 
         <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
         <PackageReference Include="MonoMod.RuntimeDetour" Version="25.1.2"/>

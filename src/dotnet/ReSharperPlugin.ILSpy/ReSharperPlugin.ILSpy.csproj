@@ -5,11 +5,16 @@
         <IsPackable>True</IsPackable>
         <DefineConstants>$(DefineConstants);RESHARPER</DefineConstants>
         <IncludeBuildOutput>false</IncludeBuildOutput>
+
+        <NoWarn>MSB3277;NU1603</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="JetBrains.ReSharper.SDK" Version="$(SdkVersion)" PrivateAssets="all"/>
         <PackageReference Include="Wave" Version="$(WaveVersion)"/>
+
+        <!-- Resolve version conflict. -->
+        <PackageReference Include="Mono.Cecil" Version="0.11.5"/>
 
         <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
         <PackageReference Include="MonoMod.RuntimeDetour" Version="25.1.2"/>
@@ -21,6 +26,14 @@
         <Content Include="bin\$(AssemblyName)\$(Configuration)\$(AssemblyName).pdb" PackagePath="dotFiles" Pack="true" Visible="false"/>
 
         <!-- TODO: add additional assemblies -->
+
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\ICSharpCode.Decompiler.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.Backports.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.Core.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.Iced.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.ILHelpers.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.RuntimeDetour.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
+        <Content Include="bin\$(AssemblyName)\$(Configuration)\MonoMod.Utils.dll" PackagePath="dotFiles" Pack="true" Visible="false"/>
     </ItemGroup>
 
 </Project>
