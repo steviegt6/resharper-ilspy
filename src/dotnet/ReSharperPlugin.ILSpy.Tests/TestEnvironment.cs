@@ -14,7 +14,7 @@ using NUnit.Framework;
 namespace ReSharperPlugin.ILSpy.Tests;
 
 [ZoneDefinition]
-public class IlSpyTestEnvironmentZone : ITestsEnvZone, IRequire<PsiFeatureTestZone>, IRequire<IILSpyZone>;
+public class IlSpyTestEnvironmentZone : ITestsEnvZone, IRequire<PsiFeatureTestZone>, IRequire<IIlSpyZone>;
 
 [ZoneMarker]
 public class ZoneMarker : IRequire<ICodeEditingZone>, IRequire<ILanguageCSharpZone>, IRequire<IlSpyTestEnvironmentZone>;
