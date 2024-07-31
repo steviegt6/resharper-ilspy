@@ -192,13 +192,14 @@ prepareSandbox {
             "$outputFolder/${DotnetPluginId}.dll",
             "$outputFolder/${DotnetPluginId}.pdb",
             // TODO: add additional assemblies
-            "$outputFolder/ICSharpCode.Decompiler.dll",
-            "$outputFolder/MonoMod.Backports.dll",
-            "$outputFolder/MonoMod.Core.dll",
-            "$outputFolder/MonoMod.Iced.dll",
-            "$outputFolder/MonoMod.ILHelpers.dll",
-            "$outputFolder/MonoMod.RuntimeDetour.dll",
-            "$outputFolder/MonoMod.Utils.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/ICSharpCode.Decompiler.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.Backports.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.Core.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.Iced.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.ILHelpers.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.RuntimeDetour.dll",
+            "${rootDir}/Dependencies/bin/${BuildConfiguration}/net8.0/MonoMod.Utils.dll",
+
     ]
 
     dllFiles.forEach({ f ->
