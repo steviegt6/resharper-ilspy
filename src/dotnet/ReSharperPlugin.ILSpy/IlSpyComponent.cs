@@ -47,7 +47,7 @@ public class IlSpyComponent
             )
         );
 
-        notifications.CreateNotification(lifetime, NotificationSeverity.INFO, "ILSpy Hooked Applied", "ReSharper has been patched to use ILSpy instead of dotPeek!");
+        notifications.CreateNotification(lifetime, NotificationSeverity.INFO, "ILSpy Hooks Applied", "ReSharper has been patched to use ILSpy instead of dotPeek!");
     }
 
     private static string TranslateByDecompiler(
@@ -86,7 +86,7 @@ public class IlSpyComponent
         sb.AppendLine($"#region Assembly {assemblyPsiModule?.Assembly.AssemblyName.FullName      ?? "<ERR: unknown psi module>"}");
         sb.AppendLine($"// {assemblyPsiModule?.Assembly.Location?.AssemblyPhysicalPath?.FullPath ?? "<ERR: unknown assembly location>"}");
         sb.AppendLine($"// Decompiled with ICSharpCode.Decompiler {typeof(ICSharpCode.Decompiler.DecompilerException).Assembly.GetName().Version}");
-        sb.AppendLine("// Patched by Tomat: https://github.com/steviegt6/resharper-patcher");
+        sb.AppendLine("// Patched by Tomat: https://github.com/steviegt6/resharper-ilspy");
         sb.AppendLine("#endregion");
         sb.AppendLine(); // For formatting.
 
