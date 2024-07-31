@@ -1,5 +1,5 @@
 Param(
-    $Version = "9999.0.0"
+    $Version = "2024.1.0"
 )
 
 Set-StrictMode -Version Latest
@@ -9,4 +9,4 @@ Set-Location $PSScriptRoot
 
 . ".\settings.ps1"
 
-Invoke-Exe $MSBuildPath "/t:Restore;Rebuild;Pack" "$SolutionPath" "/v:minimal" "/p:PackageVersion=$Version" "/p:PackageOutputPath=`"$OutputDirectory`""
+Invoke-Exe $MSBuildPath "/t:Restore;Rebuild;Pack" "$SolutionPath" "/p:Configuration=Release" "/v:minimal" "/p:PackageVersion=$Version" "/p:PackageOutputPath=`"$OutputDirectory`""
