@@ -10,6 +10,9 @@
 
     <ItemGroup>
         <PackageReference Include="JetBrains.Rider.SDK" Version="$(SdkVersion)"/>
+
+        <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7660-preview2"/>
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="25.1.2"/>
     </ItemGroup>
 
 </Project>
