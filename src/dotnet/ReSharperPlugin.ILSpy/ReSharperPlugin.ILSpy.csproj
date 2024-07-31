@@ -6,7 +6,7 @@
         <DefineConstants>$(DefineConstants);RESHARPER</DefineConstants>
         <IncludeBuildOutput>false</IncludeBuildOutput>
 
-        <NoWarn>MSB3277;NU1603</NoWarn>
+        <NoWarn>MSB3277;NU1603;NU1608</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>

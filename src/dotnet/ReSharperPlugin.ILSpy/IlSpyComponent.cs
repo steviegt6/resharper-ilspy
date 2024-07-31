@@ -4,7 +4,9 @@ using System.Text;
 
 using JetBrains.Annotations;
 using JetBrains.Application;
+using JetBrains.Application.Notifications;
 using JetBrains.Application.Progress;
+using JetBrains.Lifetimes;
 using JetBrains.Metadata.Debug;
 using JetBrains.Metadata.Reader.API;
 using JetBrains.ReSharper.Feature.Services.ExternalSources.CSharp.MetadataTranslator;
@@ -29,7 +31,7 @@ public class IlSpyComponent
     //                                                       hook lifetimes.
     private static readonly List<object> lifetime_extender = [];
 
-    static IlSpyComponent()
+    public IlSpyComponent(Lifetime lifetime, UserNotifications notifications)
     {
         lifetime_extender.Add(
             new Hook(
@@ -44,6 +46,8 @@ public class IlSpyComponent
                 typeof(IlSpyComponent).GetMethod(nameof(WriteHeader), BindingFlags.Static       | BindingFlags.NonPublic)!
             )
         );
+
+        notifications.CreateNotification(lifetime, NotificationSeverity.INFO, "ILSpy Hooked Applied", "ReSharper has been patched to use ILSpy instead of dotPeek!");
     }
 
     private static string TranslateByDecompiler(
